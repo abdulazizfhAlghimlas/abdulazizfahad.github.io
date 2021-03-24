@@ -1,38 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="module2-solution.css">
-	<title> MOd2_Solution </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="testafter.css">
 
+
+	<script>
+		
+		function passvalues() {
+			var spacee = getElementsById("space").value;
+			localStorage.setItem("textvalue",spacee);
+			return false;
+
+		}
+
+
+
+	</script>
+	<title>test after created</title>
 </head>
-
-
 <body>
-	<div class="row">
-	<h1>Our Menu</h1>
-  <div class="col-lg-4 col-md-6 col-sm-12" id="container">
-    <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  	<p id="p1">Chicken</p>
 
-  	</div>
+	<form class="box" action="nextpage.html">
+		<header class="headers">
+			<h1>احسب عقارك</h1>
+		</header>
+		
+		<input type="text" name="" placeholder="المدينة">
+        <input type="text" name="" placeholder="الحي">
+        <input type="text" name="" placeholder="المخطط">
+        <!-- space-->
+        <input type="text" name="" id="space" placeholder="الماسحة"  ><!-- onkeypress="inNumber(evt)" -->
+        <input type="text" name="" placeholder="عرض الشارع ">
+        <input type="text" name="" placeholder="عدد الشوارع">
+        <br>
+        <br>
 
-  
+        <select class="select">
+                <option>a</option>
+                <option>b</option>
+                <option>c</option> 
+                <option>d</option>
+        </select>
+        <br>
+        <p> الخدمات </p>
+        <br>
+        <input type="checkbox" name="water">
+        <label for="water"style="color: black">الماء</label>
+        <input type="checkbox" name="ele">
+        <label for="ele"style="color: black">الكهرباء </label>
+        <input type="checkbox" name="tel">
+        <label for="tel"style="color: black">الهاتف </label>
+        <input type="checkbox" name="e2">
+        <label for="e2"style="color: black">الصرف</label>
 
-  <div class="col-lg-4 col-md-6 col-sm-12" id="container"><p>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <br>
+        <input type="submit" name="" value="احسبها" onclick="passvalues();">
 
-  	<p id="p2">Beef</p>
 
-  </div>
+	</form>
 
-  <div class="col-lg-4 col-md-12 col-sm-12" id="container"><p>lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-  	<p  id="p3">Sushi</p>
 
-  </div>
+<!-- <script>
+        
+        function inNumber(evt) {
+                var char = String.formcharCode(evt.which);
+                if (!/[0-9]/.test(chae)) {
 
-	</div>	
+                evt.preventDefault();
 
+                }
+                
+        }
+
+
+
+</script> -->
 </body>
 </html>
